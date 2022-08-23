@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 const Card = ({imageSource, title, detailURL}) => {
   return (
@@ -17,7 +18,7 @@ const Card = ({imageSource, title, detailURL}) => {
                                 </div>
                             </div>
                             <footer className="card-footer">
-                                <a href={detailURL} className="card-footer-item">Detail</a>
+                                <Link className="card-footer-item" to={detailURL}>Detail</Link>
                             </footer>
                         </div>
                     </div>
