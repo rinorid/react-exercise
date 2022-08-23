@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = ({imageSource, title, detailURL}) => {
   return (
-                    <div className="column is-one-fifth">
+                    <div className="column is-one-fifth-desktop is-full-mobile is-half-tablet">
                         <div className="card">
                             <div className="card-image">
                                 <figure className="image is-4by3">

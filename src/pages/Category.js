@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Card from '../reusable/Card';
 
-const BasicHook = () => {
+const Category = () => {
     const [meals, setMeals] = useState(null);
 
     const fetchData = async () => {
@@ -38,4 +38,4 @@ const BasicHook = () => {
     )
 }
 
-export default BasicHook
+export default Category
