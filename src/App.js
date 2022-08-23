@@ -5,6 +5,8 @@ import {
   Route,
 } from "react-router-dom";
 import Home from './pages/Home';
+import Category from './pages/Category';
+import Detail from './pages/Detail';
 import Navbar from './components/Navbar';
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
           <Navbar />
           <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/category" element={<Category />} />
+              <Route path="/category/detail/:mealID" element={<Detail />} />
           </Routes>
       </div>
     </BrowserRouter>
